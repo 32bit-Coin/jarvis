@@ -4,6 +4,13 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 8080;
 app.use(express.static(__dirname + '/public'));// sendFile will go here
+
+var myLogger = function (req, res, next) {
+  console.log('LOGGED');
+  next();
+};
+app.use(myLogger);
+
 app.get('/', function(req, res) {
   console.log('get request');
   res.sendFile(path.join(__dirname, './public/index.html'));
