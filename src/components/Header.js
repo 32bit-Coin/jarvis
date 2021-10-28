@@ -2,7 +2,6 @@ import React from 'react'
 import { useHistory } from 'react-router-dom'
 
 export default function Header() {
-    let value = 10;
     let history = useHistory()
     return (
         <div className="jarvis-header">

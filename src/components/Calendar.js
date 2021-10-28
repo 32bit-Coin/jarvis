@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 
-export default function MyCalendar() {
-    return(
-        <div className="jarvis-cal">
-            <h1>Calendar</h1>
-            <Calendar />
-        </div>
+export default function MyCal(){
+    const [value, onChange] = useState(new Date());
+    return (
+        <div className="jarvis-calendar">
+        <Calendar
+            onChange={onChange}
+            value={value}
+        />
+    </div>
     )
 }
