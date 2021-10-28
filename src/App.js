@@ -12,6 +12,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Main}/>
           <Route path="/footer" exact component={Footer}/>
+          <Route path="/Calendar" exact component={Calendar}/>
         </Switch>
       </Router>
     </div>

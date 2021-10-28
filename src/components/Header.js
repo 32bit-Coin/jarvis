@@ -9,6 +9,7 @@ export default function Header() {
             <h1> HEADER</h1>
             <button onClick= {()=> history.push("/Footer")}> Home</button>
             <button onClick= {()=> history.push("/")}> MAin</button>
+            <button onClick= {()=> history.push("/Calendar")}> Cal</button>
         </div>
     )
 }
