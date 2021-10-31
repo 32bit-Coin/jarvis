@@ -5,10 +5,11 @@ export default function Header() {
     let history = useHistory()
     return (
         <div className="jarvis-header">
-            <h1> HEADER</h1>
+            <p>HEADER</p>
             <button onClick= {()=> history.push("/Footer")}> Home</button>
             <button onClick= {()=> history.push("/")}> MAin</button>
             <button onClick= {()=> history.push("/Calendar")}> Cal</button>
+            <button onClick= {()=> history.push("/Tania")}> Tania</button>
         </div>
     )
 }
