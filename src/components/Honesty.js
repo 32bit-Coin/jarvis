@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Events = () => {
+/* const Events = (props) => {
     return (
         <tbody>
             <tr>
@@ -15,8 +15,32 @@ const Events = () => {
             </tr>
         </tbody>
     )
-}
+} */
+
+removeEvent = (index) => {
+    const {eventsData} = this.state
+  
+    this.setState({
+      eventsData: eventsData.filter((event, i) => {
+        return i !== index
+      }),
+    })
+  }
 class Honesty extends React.Component {
+    state = {
+        eventsData: [
+            {
+                eventName: '420',
+                eventDate: '16h',
+                eventDetails: 'Cool'
+            }, 
+            {
+                eventName: 'Digest',
+                eventDate: '20h',
+                eventDetails: 'Sleepy'
+            },
+        ]
+    }
     render() {
         return (
             <div className="Honesty">
@@ -27,9 +51,10 @@ class Honesty extends React.Component {
                             <th>Name</th>
                             <th>Date</th>
                             <th>Details</th>
+                            <th>Buttons</th>
                         </tr>
                     </thead>
-                    <Events />
+                    <Events eventsData={characters}/>
                 </table>
             </div>
         )

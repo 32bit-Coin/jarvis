@@ -6,6 +6,7 @@ import MyCal from './components/Calendar';
 // import Calendar from 'react-calendar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Tania from './components/Tania'
+import Honesty from './components/Honesty';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           {/* <Route path="/Calendar" exact component={Calendar}/> */}
           <Route path="/MyCal" exact component={MyCal}/>
           <Route path="/Tania" exact component={Tania}/>
+          <Route path="/Honesty" exact component={Honesty}/>
         </Switch>
       </Router>
     </div>
