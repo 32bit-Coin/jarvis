@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const TableBody = () => {
+/* const TableBody = () => {
     return (
         <tbody>
             <tr>
@@ -13,7 +13,7 @@ const TableBody = () => {
                 <th>Events</th>
             </tr>
         </tbody>
-  }
+  } */
 
 class Tania extends React.Component {
     render() {
